@@ -1,39 +1,41 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* margin-inline: 10px; */
+}
+
 body {
     margin: 0;
+    margin-top: 2vh;
+    margin-left: 10px;
+    margin-right: 10px;
     font-family: Arial;
+    margin-bottom: 6vh;
 }
 
 .header_main {
-    /* margin: 5vh; */
-    margin-top: 3vh;
-    margin-left: 5vh;
-    margin-right: 5vh;
+    display: grid;
+    grid-template-columns: 10% 20% 70% ;
+    grid-template-rows: 15vh;
 }
 
 .header_first {
-    margin-left: 4vh;
-    display: inline-block;
-    margin-right: 4vh;
-    max-width: 1vh;
-    padding: 10vh;
+    margin-right: 20px;
     background: #888;
 }
 
 .header_second {
-    display: inline-block;
-    padding: 10vh;
-    padding-inline-end: 50vh;
+    padding-inline-end: 25%;
     background: #888;
-    margin-right: 4vh;
+    margin-right: 20px;
 }
 
 .header_third {
-    padding-left: 53.3vh;
-    
-    display: inline-block;
-    position: absolute;
-    padding-top: 6vh;
-    padding-bottom: 7vh;
     text-align: end;
     background: #888;
     color: #fff;
@@ -41,43 +43,55 @@ body {
 }
 
 .contact_text {
-    margin-right: 5vh;
+    margin-top: 4vh;
+    margin-right: 2.5%;
 }
 
 .header_end_line {
-    margin-right: 3.2vh;
+    width: 98vw;
+    max-width: 1000%;
     margin-top: 2vh;
-    margin-left: 4vh;
+    margin-bottom: 2vh;
     background-color: #888;
     padding: 1px;
 }
 
-.content {
-    margin-top: 2vh;
-    margin-left: 9vh;
-}
 .main_article {
-    padding-right: 18vh;
-    display: inline-block;
+    overflow-wrap: break-word;
+    /* padding-right: -1vw; */
+    max-width: 945px;
+    font-size: 14px;
     background: #ddd;
+    
 }
 
 .main_article_text {
-    font-size: 14px;
+    /* font-size: 0.7vw; */
     line-height: 6px;
-    margin-left: 2vh;
 }
+
 .main_article_title {
-    margin-left: 2vh;
+    width: 100%;
+
+    /* font-size: 100%; */
+    margin-left: 1vw;
+}
+
+.content {
+    width: 100%;
 }
 
 .center {
-    margin-left: 3vh;
+    /* min-width: 50vw; */
+    max-width: 945px;
+    margin-left: 1vw;
+    /* margin-left: 0%; */
     position: absolute;
     display: inline-block;
 }
 
 .article_text_addition {
+    margin: 1%;
     display: inline-block;
     color: #666;
 }
@@ -88,29 +102,23 @@ body {
 }
 
 .left {
+    overflow-wrap: break-word;
     display: inline-block;
-    max-width: 30vh;
-    background: #888;
-    color:#fff;
+    max-width: 20%;
     text-align: left;
-    font-size: 14px;
-
 }
 
-.end_left_block {
-    margin-left: -33vh;
-    padding-right: 30vh;
-    margin-top: -25vh;
-    padding-top: 20vh;
-    max-width: 26vh;
-    padding-right: 5vh;
-    padding-bottom: 5vh;
-    background-color: #666;
+.menu {
+    
+    background: #888;
 }
 
 .menu-elements {
+    overflow-wrap: break-word;
+    max-width: 20vw;
+    color:#fff;
     font-size: 14px;
-    margin: 2vh;
+    margin: 5%;
 }
 
 a {
@@ -122,100 +130,147 @@ a:hover {
     transition: 0.4s;
 }
 
-.article_text {
-    display:inline-block;
-}
 .blocks {
+    /* width: 59vw; */
+    max-width: inherit;
     margin-top: 2vh;
 }
 
 .block_line_1 {
+    /* max-width: 50vw; */
+    /* min-width: 51vw; */
+    /* width: 53vw; */
     display: grid;
-    grid-template-columns: 28vh 28vh 28vh 28vh 27vh;
-    grid-template-rows: 28vh;
+    grid-template-columns: 8fr 1fr 8fr 1fr 8fr 1fr 8fr 1fr 8fr ;
+    grid-template-rows: 20vh;
 }
+
+.block_line_2 {
+    /* width: 53vw; */
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: 8fr 1fr 8fr 1fr 8fr 1fr 8fr 1fr 8fr ;
+    grid-template-rows: 20vh;
+}
+
 
 .block {
     background: #ddd;
-    margin-right: 2vh;
+    /* margin-right: 1vw; */
+    
+}
+.block_end {
+    background: #ddd;
 }
 
-.block_line_2{
-    margin-top: 2vh;
-    display: grid;
-    grid-template-columns: 28vh 28vh;
-    grid-template-rows: 28vh;
-}
 
+.end_left_block {
+    /* min-width: 237px; */
+    /* display: inline-block; */
+    width: 100%;
+    /* padding-right: 7vw; */
+    padding-bottom: 25vh;
+    max-width: 20%;
+    background-color: #666;
+}
 
 .bottom_articles_blocks {
-    margin-top: 2vh;
+    margin-inline: 0vw;
+    max-width: 945px;
+    font-size: 1vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* width: 52vw;  */
+    /* max-width: fit-content; */
+    /* position: absolute; */
+    /* grid-template-columns: 41vw 41vw; */
+    /* grid-template-rows: 100%; */
+    margin-top: 1vh;
+    margin-bottom: 5vh;
 }
 
 .text_block_article_left {
     display: inline-block;
     background: #ddd;
-    padding-right: 35vh;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-bottom: 1%;}
+
+.text_block_article_right {
+    margin-left: 50vw;
+    display: inline-block;
+    background: #ddd;
+    margin: 1%;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-bottom: 1%;
 }
+
 
 .bottom_left_block_text {
     color: #666;
     font-size: 14px;
-    margin: 2vh
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-bottom: 1%;
 }
 
-.text_block_article_right {
-    margin-left: 2vh;
-    display: inline-block;
-    background: #ddd;
-    padding-right: 28vh;
-
-}
 
 .bottom_right_block_text {
     color: #666;
     font-size: 14px;
-    margin: 2vh
+    margin: 1%;
 }
 
 .article_end_line {
-    margin-right: 8vh;
-    margin-top: 50vh;
+
+    margin-top: 2.5%;
     background: #666;
-    margin-bottom: 5vh;
+    margin-bottom: 1.25%;
     padding-bottom: 1px;
 }
 
 .end_lists {
+    
     display: grid;
-    grid-template-columns: 50vh 60vh 60vh;
-    /* grid-template-rows: 20vh; */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
 }
+
 .points_list {
     background-color: #666;
 }
+
 .tarifs_list {
     margin-left: 2vh;
     margin-right: 2vh;
     background-color: #666;
 }
-.end_list_block {
+
+.end_list_blocks {
     display: grid;
-    grid-template-rows: 4vh 4vh;
+    grid-template-columns: 1fr;
+
 }
+
 .end_list_block {
+    /* padding-bottom: 50vh; */
     background-color: #666;
 }
+
 #end_list_block1 {
     margin-bottom: 2vh;
 }
+
 .points_list {
+    overflow-wrap: break-word;
     color: #fff;
-    font-size: 18px;
+    font-size: 100%;
     display: grid;
     grid-template-columns: 20vh 20vh;
     
 }
+
 ul {
     list-style-type: none;
 }
